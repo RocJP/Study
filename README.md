@@ -1,2 +1,2 @@
-# Study-Kali-Linux
+# Study-Kali Linux
 Kali Linux

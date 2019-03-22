@@ -12,12 +12,12 @@ Kali Linux
 2.8、利用robots.txt
  
  
- 一、信息收集
+# 一、信息收集
  1. whois 域名URL               获取注册信息
  2. dig  ns 域名URL              获取域名信息和DNS解析信息  
  3. dig axfr@DNS服务器 域名URL   尝试区域传输攻击来获取服务器解析的所有主机名。
  4.使用theharvester来获取目标网站的邮箱、主机名、IP地址信息。
-    # theharvester -b  all  -d  URL
+  theharvester -b  all  -d  URL
 5.使用Netcraft工具           不直接查询服务器获得网站使用的软件版本信息。登陆https://toolbar.netcraft.com/site_report
  6. https://archive.org/web/web.php   这个网站回溯网站以前版本的静态副本
  7.使用谷歌的高级搜索选项 (https://support.google.com/websearch/answer/2466433)

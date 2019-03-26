@@ -19,13 +19,22 @@ Kali Linux
  4.使用theharvester来获取目标网站的邮箱、主机名、IP地址信息。
   theharvester -b  all  -d  URL
 5.使用Netcraft工具           不直接查询服务器获得网站使用的软件版本信息。登陆https://toolbar.netcraft.com/site_report
+
  6. https://archive.org/web/web.php   这个网站回溯网站以前版本的静态副本
+ 
  7.使用谷歌的高级搜索选项 (https://support.google.com/websearch/answer/2466433)
    来查找关于目标域的信息，而无需直接访问它。例如，通过使用site:site_to_look_into“target_domain”
-类似这样的搜索，我们可以在最近发现漏洞、泄漏信息或攻击成功的页面中寻找目标域的存在，可以查看以下一些对你有用的网站:
-openbugbounty.org：Open Bug Bounty是安全研究人员在面向公众的网站报告和公布漏洞(仅跨站点脚本和跨站点请求伪造)的一个独立站点。所以在谷歌中的搜索将返回所有提到的到“zonetransfe”这是openbugbounty.org所做的。
-pastebin.com ：是一种非常普遍的方法，用于让黑客匿名地去过滤和发布攻击期间所获得的信息。
-zone-h.org：Zone-H是一个恶意黑客经常去炫耀他们的成就的网站，主要是对网站的破坏。
+   类似这样的搜索，我们可以在最近发现漏洞、泄漏信息或攻击成功的页面中寻找目标域的存在，可以查看以下一些对你有用的网站:
+   openbugbounty.org：Open Bug Bounty是安全研究人员在面向公众的网站报告和公布漏洞(仅跨站点脚本和跨站点请求伪造)的一个独立站点。所以在谷歌中的搜索将返回所有提到的到“zonetransfe”这是openbugbounty.org所做的。
+   pastebin.com ：是一种非常普遍的方法，用于让黑客匿名地去过滤和发布攻击期间所获得的信息。
+   zone-h.org：Zone-H是一个恶意黑客经常去炫耀他们的成就的网站，主要是对网站的破坏。
+  
+  8.Recon-ng
+  show modules                                          查看功能模块
+  use recon/domains-hosts/brute_hosts                   加载brute_hosts模块
+  show options
+  set  url
+  run
 
 
 
